@@ -1,6 +1,7 @@
 import { createClient } from 'embedbase-js'
 import glob from 'glob'
 import fs from 'fs'
+import config from '../configuration/config.json' assert { type: "json" }
 const dataFolder = "data"
 
 async function Upload() {
@@ -13,7 +14,7 @@ async function Upload() {
     // Change the path format as necessary
     const markdownFiles = glob.sync(`${dataFolder}/**/*.md`)
 
-    const embedbase = createClient('https://api.embedbase.xyz', '51c11c74-3564-4998-8f6f-3394503882dc')
+    const embedbase = createClient('https://api.embedbase.xyz', config.EMBEDBASE_API_KEY)
 
     markdownFiles.forEach(async (path) => {
         console.log(`Uploading file ${path}... and creating chunks`)

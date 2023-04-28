@@ -4,7 +4,7 @@ I suppose we are creating a thing that gives meaningful responses from chatgpt w
 # Setup
 Add documentation `.md` files to the `data` folder in the root directory.
 
-Update line 16 to include your embedbase api key. lol don't steal mine bro.
+Update `config.json.bak` to include your api keys and rename it to `config.json`
 
 run
 ```

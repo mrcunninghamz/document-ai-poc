@@ -263,3 +263,5 @@ dist
 # Make data private
 data/*
 !data/readme.md
+configuration/*
+!configuration/config.json.bak

@@ -1,0 +1,4 @@
+export default {
+    "OPENAI_API_KEY":"<YOUR KEY>",
+    "EMBEDBASE_API_KEY":"<YOUR KEY>"
+}
