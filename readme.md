@@ -11,5 +11,16 @@ run
 node upload.js
 ```
 
+# Run
+```
+node query.js
+```
+
+# Debug
+Setting the env variable to debug will console log out the prompt and let you know when its sent to chat gpt and a resonse is returned.
+```
+NODE_ENV=debug node query.js
+```
+
 # References
 - https://docs.embedbase.xyz/tutorials/nextra-qa-docs
