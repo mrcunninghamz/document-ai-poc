@@ -49,7 +49,7 @@ return returns.join('\n\n###\n\n')
 
 async function buildPrompt(query){
     const context = await createContext(query)
-    const newPrompt = `Answer the question based on the context below, and if the question can't be answered based on the context, say "I don't know". Do not respond with suggesting tolook at the context above as the answer, do your best to at least summarize what you know about the possible asnwer. Do not mention the context in the answer."\n\nContext: ${context}\n\n---\n\nQuestion: ${query}\nAnswer:`
+    const newPrompt = `Answer the question based on the context below, and if the question can't be answered based on the context, say "I don't know". Do not respond with suggesting to look at the context above as the answer, do your best to at least summarize what you know about the possible asnwer. Do not mention the context in the answer.\n\nContext: ${context}\n\n---\n\nQuestion: ${query}\nAnswer:`
     return newPrompt
 }
 
